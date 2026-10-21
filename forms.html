@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы</title>
+</head>
+<body>
+
+<h1 id="top">Районы Москвы</h1>
+<h2>Содержание</h2>
+<ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="districts.html">Районы Москвы</a></li>
+    <li><a href="transport.html">Транспорт</a></li>
+    <li><a href="parks.html">Парки и архитектура</a></li>
+    <li><a href="table.html">Таблица районов Москвы</a></li>
+    <li><b><a href="forms.html">Формы</a></b></li>
+    <li><a href="dom.html">DOM_JS. Считываем информацию из DOM</a></li>
+    <li><a href="translit.html">Изменяем кириллицу на латиницу по клику</a></li>
+    <li><a href="algorithm.html">Решение алгоритмической задачи</a></li>
+    <li><a href="https://www.hse.ru" target="_blank">Сайт ВШЭ</a></li>
+    <li><a href="https://www.hse.ru" target="_blank"><img src="images/moscow_small.svg" width="45" alt="Внешняя ссылка"></a></li>
+</ul>
+<hr>
+
+<h2 id="forms">Формы</h2>
+<h3>Контактные данные</h3>
+<form action="https://httpbin.org/post" method="post" target="_blank">
+    Фамилия: <input name="surname" size="10"/>
+    Имя: <input name="name" size="10"/>
+    Группа: <input name="group" size="6"/>
+<p>Телефон: <input name="phone" size="12"/>
+    Почта: <input name="email" size="15" type="email"/></p>
+    Дата: <input name="date" type="date"/>
+<input type="submit" value="Отправить"/>
+</form>
+<h3>Оценка района</h3>
+<form action="https://httpbin.org/post" method="post" target="_blank">
+    Район: <input name="district" size="12" type="text" value="Хамовники"/>
+    Оценка: <input max="10" min="1" name="score" size="3" type="number" value="5"/>
+<p>Хороший транспорт?
+    <input checked="" name="transport" type="radio" value="yes"/>Да
+    <input name="transport" type="radio" value="no"/>Нет
+    <input checked="" name="park" type="checkbox"/>Есть парк</p>
+    Дата: <input name="visit" type="date"/>
+    Пароль: <input name="password" size="8" type="password"/>
+<input name="task" type="hidden" value="2"/>
+<input type="submit" value="Отправить"/>
+</form>
+
+<p><a href="#top">Наверх</a></p>
+
+<script src="script.js"></script>
+</body>
+</html>
